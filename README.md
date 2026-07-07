@@ -1,5 +1,7 @@
 # Declare
 
+![Delcare's welcome screen](assets/welcome-screen.png)
+
 **An Android app that generates personalized four-year academic plans for University of Illinois Urbana-Champaign students.**
 
 Declare turns the messy, guesswork-heavy process of course planning into something a student can do in a few taps. You pick a major, answer a short questionnaire about your background and goals, and the app builds a semester-by-semester path to graduation that respects prerequisites, course offering terms, credit-hour limits, and university general-education requirements. You can save multiple plans, compare two side by side, and see how choices like graduating early or studying abroad change the cost and timeline.
