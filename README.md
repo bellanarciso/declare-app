@@ -1,6 +1,6 @@
 # Declare
 
-![Delcare's welcome screen](assets/welcome-screen.png)
+<img src="assets/welcome-screen.png" width="400" alt="Declare welcome screen">
 
 **An Android app that generates personalized four-year academic plans for University of Illinois Urbana-Champaign students.**
 
