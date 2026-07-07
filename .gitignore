@@ -14,9 +14,3 @@ app/build/
 tools/catalog_pipeline/cache/
 tools/catalog_pipeline/venv/
 scripts/__pycache__/
-
-# Local agent / editor session artifacts — keep these OUT of the public repo
-.claude/
-.claude-sessions/
-.githooks/
-CLAUDE.md
