@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="48dp"
+    android:orientation="horizontal"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <!-- Color indicator strip for course type -->
+    <View
+        android:id="@+id/course_type_indicator"
+        android:layout_width="4dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="12dp"
+        android:background="@color/declared_forest" />
+
+    <!-- Course ID and name -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_course_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceSubtitle2"
+            android:textColor="@color/declared_deep" />
+
+        <TextView
+            android:id="@+id/text_course_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="@color/declared_forest" />
+
+        <TextView
+            android:id="@+id/text_group_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textAppearance="?attr/textAppearanceCaption"
+            android:textColor="@color/declared_sage"
+            android:textStyle="italic"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <!-- Credit hours -->
+    <TextView
+        android:id="@+id/text_credit_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textAppearance="?attr/textAppearanceCaption"
+        android:textColor="@color/declared_sage" />
+
+    <!-- Badge for courses exclusive to the 2nd major -->
+    <TextView
+        android:id="@+id/text_secondary_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="8dp"
+        android:background="@color/declared_forest"
+        android:paddingHorizontal="6dp"
+        android:paddingVertical="2dp"
+        android:text="2nd"
+        android:textAppearance="?attr/textAppearanceOverline"
+        android:textColor="@color/declared_cream"
+        android:visibility="gone" />
+
+    <!-- Badge for electives that satisfy both majors' requirements -->
+    <TextView
+        android:id="@+id/text_shared_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="4dp"
+        android:background="@color/declared_butter"
+        android:paddingHorizontal="6dp"
+        android:paddingVertical="2dp"
+        android:text="Both"
+        android:textAppearance="?attr/textAppearanceOverline"
+        android:textColor="@color/declared_deep"
+        android:visibility="gone" />
+
+</LinearLayout>

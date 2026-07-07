@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.UIUCPlanBuilder" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <!-- Color system -->
+        <item name="colorPrimary">@color/declared_forest</item>
+        <item name="colorPrimaryVariant">@color/declared_deep</item>
+        <item name="colorOnPrimary">@color/declared_cream</item>
+
+        <item name="colorSecondary">@color/declared_butter</item>
+        <item name="colorSecondaryVariant">@color/declared_sage</item>
+        <item name="colorOnSecondary">@color/declared_forest</item>
+
+        <item name="android:colorBackground">@color/declared_cream</item>
+        <item name="colorOnBackground">@color/declared_deep</item>
+
+        <item name="colorSurface">@color/declared_paper</item>
+        <item name="colorOnSurface">@color/declared_deep</item>
+
+        <item name="colorError">@color/declared_terracotta</item>
+        <item name="colorOnError">@color/declared_cream</item>
+
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/declared_deep</item>
+        <item name="android:textColorSecondary">@color/declared_forest_muted</item>
+        <item name="android:textColorHint">@color/declared_sage</item>
+
+        <!-- Status / nav bar - light mode (dark icons on cream) -->
+        <item name="android:statusBarColor">@color/declared_cream</item>
+        <item name="android:navigationBarColor">@color/declared_cream</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+
+        <!-- Default font for any view that doesn't override -->
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="fontFamily">@font/inter</item>
+
+        <!-- Typography overrides -->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.Declared.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.Declared.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.Declared.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.Declared.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.Declared.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.Declared.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.Declared.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.Declared.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.Declared.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.Declared.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.Declared.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.Declared.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.Declared.Overline</item>
+
+        <!-- Shape overrides -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Declared.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Declared.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Declared.LargeComponent</item>
+    </style>
+
+    <!-- Dark warm theme used exclusively for WelcomeActivity -->
+    <style name="Theme.UIUCPlanBuilder.Welcome" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/declared_butter</item>
+        <item name="colorPrimaryVariant">@color/declared_forest</item>
+        <item name="colorOnPrimary">@color/declared_deep</item>
+        <item name="colorSecondary">@color/declared_sage</item>
+        <item name="colorSecondaryVariant">@color/declared_forest</item>
+        <item name="colorOnSecondary">@color/declared_deep</item>
+        <item name="android:colorBackground">@color/declared_deep</item>
+        <item name="colorOnBackground">@color/declared_cream</item>
+        <item name="colorSurface">@color/declared_dark_surface</item>
+        <item name="colorOnSurface">@color/declared_cream</item>
+        <item name="colorError">@color/declared_terracotta</item>
+        <item name="colorOnError">@color/declared_cream</item>
+        <item name="android:textColorPrimary">@color/declared_cream</item>
+        <item name="android:textColorSecondary">@color/declared_sage</item>
+        <item name="android:textColorHint">@color/declared_sage</item>
+        <item name="android:statusBarColor">@color/declared_deep</item>
+        <item name="android:navigationBarColor">@color/declared_deep</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="fontFamily">@font/inter</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="textAppearanceHeadline1">@style/TextAppearance.Declared.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.Declared.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.Declared.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.Declared.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.Declared.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.Declared.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.Declared.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.Declared.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.Declared.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.Declared.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.Declared.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.Declared.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.Declared.Overline</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Declared.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Declared.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Declared.LargeComponent</item>
+    </style>
+
+    <style name="Theme.UIUCPlanBuilder.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- ============================================================ -->
+    <!-- Typography                                                    -->
+    <!-- ============================================================ -->
+
+    <style name="TextAppearance.Declared.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/fraunces</item>
+        <item name="android:fontFamily">@font/fraunces</item>
+        <item name="android:textColor">@color/declared_deep</item>
+        <item name="android:letterSpacing">-0.04</item>
+    </style>
+    <style name="TextAppearance.Declared.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/fraunces</item>
+        <item name="android:fontFamily">@font/fraunces</item>
+        <item name="android:textColor">@color/declared_deep</item>
+        <item name="android:letterSpacing">-0.035</item>
+    </style>
+    <style name="TextAppearance.Declared.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/fraunces</item>
+        <item name="android:fontFamily">@font/fraunces</item>
+        <item name="android:textColor">@color/declared_deep</item>
+        <item name="android:letterSpacing">-0.03</item>
+    </style>
+    <style name="TextAppearance.Declared.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/fraunces</item>
+        <item name="android:fontFamily">@font/fraunces</item>
+        <item name="android:textColor">@color/declared_deep</item>
+        <item name="android:letterSpacing">-0.025</item>
+    </style>
+    <style name="TextAppearance.Declared.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/fraunces</item>
+        <item name="android:fontFamily">@font/fraunces</item>
+        <item name="android:textColor">@color/declared_deep</item>
+        <item name="android:letterSpacing">-0.02</item>
+    </style>
+    <style name="TextAppearance.Declared.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/fraunces</item>
+        <item name="android:fontFamily">@font/fraunces</item>
+        <item name="android:textColor">@color/declared_deep</item>
+        <item name="android:letterSpacing">-0.015</item>
+    </style>
+    <style name="TextAppearance.Declared.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:textColor">@color/declared_deep</item>
+    </style>
+    <style name="TextAppearance.Declared.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:textColor">@color/declared_forest</item>
+    </style>
+    <style name="TextAppearance.Declared.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:textColor">@color/declared_deep</item>
+    </style>
+    <style name="TextAppearance.Declared.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:textColor">@color/declared_deep</item>
+    </style>
+    <style name="TextAppearance.Declared.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+    <style name="TextAppearance.Declared.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:textColor">@color/declared_forest_muted</item>
+    </style>
+    <style name="TextAppearance.Declared.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:textColor">@color/declared_forest_muted</item>
+        <item name="android:letterSpacing">0.14</item>
+    </style>
+
+    <!-- Brand-only styles (use via android:textAppearance on a TextView) -->
+    <style name="TextAppearance.Declared.Script" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/sacramento</item>
+        <item name="android:fontFamily">@font/sacramento</item>
+        <item name="android:textColor">@color/declared_forest</item>
+        <item name="android:textSize">64sp</item>
+    </style>
+    <style name="TextAppearance.Declared.ScriptSmall" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/sacramento</item>
+        <item name="android:fontFamily">@font/sacramento</item>
+        <item name="android:textColor">@color/declared_forest</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+    <style name="TextAppearance.Declared.Tagline" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/fraunces_italic</item>
+        <item name="android:fontFamily">@font/fraunces_italic</item>
+        <item name="android:textColor">@color/declared_forest</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <!-- ============================================================ -->
+    <!-- Shape                                                         -->
+    <!-- ============================================================ -->
+
+    <style name="ShapeAppearance.Declared.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+    <style name="ShapeAppearance.Declared.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+    <style name="ShapeAppearance.Declared.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+</resources>

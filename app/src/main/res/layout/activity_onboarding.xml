@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/declared_cream">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/declared_forest"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/text_step_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:textColor="@color/declared_butter" />
+
+        <TextView
+            android:id="@+id/text_step_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="@color/declared_cream" />
+
+        <!-- Step dots -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/dot_1"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginEnd="6dp"
+                android:background="@color/declared_butter"
+                android:elevation="1dp" />
+
+            <View
+                android:id="@+id/dot_2"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginEnd="6dp"
+                android:background="@color/declared_sage"
+                android:elevation="1dp" />
+
+            <View
+                android:id="@+id/dot_3"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@color/declared_sage"
+                android:elevation="1dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Paged content -->
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Step 1: About you -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/declared_cream">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp">
+
+                <!-- Start date -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="@color/declared_paper">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="When are you starting at UIUC?"
+                            android:textAppearance="?attr/textAppearanceSubtitle1"
+                            android:textColor="@color/declared_forest" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/onboard_semester_layout"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="Semester">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/onboard_semester_dropdown"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="none"
+                                    android:padding="14dp"
+                                    android:textAppearance="?attr/textAppearanceBody1" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <View android:layout_width="12dp" android:layout_height="1dp" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/onboard_year_layout"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="Year">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/onboard_year_dropdown"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="none"
+                                    android:padding="14dp"
+                                    android:textAppearance="?attr/textAppearanceBody1" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Goals -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="@color/declared_paper">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="What are your goals?"
+                            android:textAppearance="?attr/textAppearanceSubtitle1"
+                            android:textColor="@color/declared_forest" />
+
+                        <CheckBox
+                            android:id="@+id/onboard_goal_graduate_early"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Graduate as early as possible"
+                            android:textAppearance="?attr/textAppearanceBody1" />
+
+                        <CheckBox
+                            android:id="@+id/onboard_goal_minor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Add a minor"
+                            android:textAppearance="?attr/textAppearanceBody1" />
+
+                        <CheckBox
+                            android:id="@+id/onboard_goal_double_major"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Double major or dual degree"
+                            android:textAppearance="?attr/textAppearanceBody1" />
+
+                        <CheckBox
+                            android:id="@+id/onboard_goal_study_abroad"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Study abroad (one semester)"
+                            android:textAppearance="?attr/textAppearanceBody1" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Step 2: Prior credits -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/declared_cream">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="@color/declared_paper">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Did you earn any college credits before UIUC?"
+                            android:textAppearance="?attr/textAppearanceSubtitle1"
+                            android:textColor="@color/declared_forest" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="12dp"
+                            android:text="Select all that apply. You can enter exact scores in Profile > Credits."
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/declared_sage" />
+
+                        <CheckBox
+                            android:id="@+id/onboard_has_ap"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="AP exams"
+                            android:textAppearance="?attr/textAppearanceBody1" />
+
+                        <CheckBox
+                            android:id="@+id/onboard_has_ib"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="IB exams"
+                            android:textAppearance="?attr/textAppearanceBody1" />
+
+                        <CheckBox
+                            android:id="@+id/onboard_has_dual"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Dual enrollment / concurrent enrollment"
+                            android:textAppearance="?attr/textAppearanceBody1" />
+
+                        <CheckBox
+                            android:id="@+id/onboard_has_none"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="None of the above"
+                            android:textAppearance="?attr/textAppearanceBody1" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Info card -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/declared_paper"
+                    app:strokeColor="@color/declared_sage"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Enter your exact exam scores in Profile > Credits tab to get the most accurate plan."
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/declared_forest" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Step 3: Interests -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/declared_cream">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp">
+
+                <!-- Humanities & Arts -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="@color/declared_paper">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Humanities &amp; Arts" android:textAppearance="?attr/textAppearanceSubtitle2" android:textColor="@color/declared_forest" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Literature &amp; Arts (LA) · Historical &amp; Philosophical (HP)" android:textAppearance="?attr/textAppearanceCaption" android:textColor="@color/declared_sage" />
+                        <com.google.android.material.chip.ChipGroup android:id="@+id/onboard_chips_humanities" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:singleSelection="false">
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Philosophy &amp; Ethics" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ancient World &amp; Classical Civilizations" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Theater &amp; Performance" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Visual Art &amp; Design" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Music &amp; Sound" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Film &amp; Media Studies" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Creative Writing &amp; Literature" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Religion &amp; Spirituality" />
+                        </com.google.android.material.chip.ChipGroup>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Natural Sciences -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="@color/declared_paper">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Natural Sciences" android:textAppearance="?attr/textAppearanceSubtitle2" android:textColor="@color/declared_forest" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Physical Sciences (PS) · Life Sciences (LS)" android:textAppearance="?attr/textAppearanceCaption" android:textColor="@color/declared_sage" />
+                        <com.google.android.material.chip.ChipGroup android:id="@+id/onboard_chips_sciences" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:singleSelection="false">
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Astronomy &amp; Space Science" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Climate &amp; Earth Science" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ecology &amp; Conservation" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Neuroscience &amp; the Brain" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Genetics &amp; Evolution" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Human Biology &amp; Health" />
+                        </com.google.android.material.chip.ChipGroup>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Social & Behavioral Sciences -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="@color/declared_paper">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Social &amp; Behavioral Sciences" android:textAppearance="?attr/textAppearanceSubtitle2" android:textColor="@color/declared_forest" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Social Sciences (SS) · Behavioral Sciences (BSC)" android:textAppearance="?attr/textAppearanceCaption" android:textColor="@color/declared_sage" />
+                        <com.google.android.material.chip.ChipGroup android:id="@+id/onboard_chips_social" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:singleSelection="false">
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Psychology &amp; Mental Health" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Political Science &amp; Law" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sociology &amp; Social Issues" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Communication &amp; Rhetoric" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Anthropology &amp; Archaeology" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gender &amp; Sexuality Studies" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Geography &amp; Urban Studies" />
+                        </com.google.android.material.chip.ChipGroup>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Cultural Studies -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="@color/declared_paper">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cultural Studies" android:textAppearance="?attr/textAppearanceSubtitle2" android:textColor="@color/declared_forest" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Non-Western (NW) · US Minority (US) · Western/Comparative (WCC)" android:textAppearance="?attr/textAppearanceCaption" android:textColor="@color/declared_sage" />
+                        <com.google.android.material.chip.ChipGroup android:id="@+id/onboard_chips_cultural" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:singleSelection="false">
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="East Asian Cultures" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Latin American &amp; Caribbean Studies" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="African &amp; African American Studies" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Middle Eastern &amp; Islamic Studies" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Native American &amp; Indigenous Studies" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="European History &amp; Culture" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Global Issues &amp; Justice" />
+                        </com.google.android.material.chip.ChipGroup>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Language -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="@color/declared_paper">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Language" android:textAppearance="?attr/textAppearanceSubtitle2" android:textColor="@color/declared_forest" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Language Other Than English (LOTE)" android:textAppearance="?attr/textAppearanceCaption" android:textColor="@color/declared_sage" />
+                        <com.google.android.material.chip.ChipGroup android:id="@+id/onboard_chips_languages" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:singleSelection="false">
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Spanish" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="French" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="German" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Japanese" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mandarin Chinese" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Arabic" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Korean" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Italian" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Portuguese" />
+                        </com.google.android.material.chip.ChipGroup>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Quantitative Reasoning -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="@color/declared_paper">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Quantitative Reasoning" android:textAppearance="?attr/textAppearanceSubtitle2" android:textColor="@color/declared_forest" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="QR I · QR II" android:textAppearance="?attr/textAppearanceCaption" android:textColor="@color/declared_sage" />
+                        <com.google.android.material.chip.ChipGroup android:id="@+id/onboard_chips_quant" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:singleSelection="false">
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Statistics &amp; Data" />
+                            <com.google.android.material.chip.Chip style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Logic &amp; Formal Reasoning" />
+                        </com.google.android.material.chip.ChipGroup>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <View android:layout_width="match_parent" android:layout_height="8dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </ViewFlipper>
+
+    <!-- Bottom navigation bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/declared_paper"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_onboard_back"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Back"
+            android:textColor="@color/declared_forest"
+            android:visibility="invisible"
+            app:cornerRadius="8dp"
+            app:strokeColor="@color/declared_forest" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_onboard_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Next"
+            android:textColor="@color/declared_cream"
+            app:backgroundTint="@color/declared_forest"
+            app:cornerRadius="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

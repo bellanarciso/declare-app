@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Declare</string>
+    <string name="app_tagline">Build your path to graduation</string>
+    <string name="label_select_major">Select your major</string>
+    <string name="button_generate_plan">Generate My Plan</string>
+    <string name="label_credits">credits</string>
+    <string name="label_total_credits">Total credits</string>
+    <string name="content_description_back">Back</string>
+    <string name="fab_add_major">Add Major</string>
+</resources>

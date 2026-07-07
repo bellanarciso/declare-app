@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Declared brand palette -->
+    <color name="declared_deep">#FF15291F</color>
+    <color name="declared_forest">#FF1F3D2E</color>
+    <color name="declared_sage">#FFA8B5A0</color>
+    <color name="declared_butter">#FFF5C95C</color>
+    <color name="declared_cream">#FFF8F4ED</color>
+    <color name="declared_paper">#FFFBF9F5</color>
+    <color name="declared_terracotta">#FFB85C3F</color>
+    <color name="declared_dark_surface">#FF1A2F25</color>
+    <color name="declared_forest_muted">#A61F3D2E</color>
+
+    <!-- Neutral surfaces -->
+    <color name="white">#FFFFFF</color>
+    <color name="surface_background">#FFFBF9F5</color>
+
+    <!-- Course type indicator colors -->
+    <color name="color_major_req">#FF1F3D2E</color>
+    <color name="color_gen_ed">#FFA8B5A0</color>
+    <color name="color_elective">#FFB85C3F</color>
+</resources>

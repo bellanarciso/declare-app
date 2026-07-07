@@ -1,0 +1,663 @@
+{
+  "majors": [
+    {
+      "name": "Computer Science",
+      "college": "Grainger College of Engineering",
+      "courses": [
+        {
+          "id": "CS 124",
+          "name": "Introduction to Computer Science I",
+          "credits": 3,
+          "prereqs": [],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "CS 128",
+          "name": "Introduction to Computer Science II",
+          "credits": 3,
+          "prereqs": [
+            "CS 124"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "CS 173",
+          "name": "Discrete Structures",
+          "credits": 3,
+          "prereqs": [
+            "CS 124"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "CS 225",
+          "name": "Data Structures",
+          "credits": 4,
+          "prereqs": [
+            "CS 128",
+            "CS 173"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "CS 233",
+          "name": "Computer Architecture",
+          "credits": 4,
+          "prereqs": [
+            "CS 225"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "CS 241",
+          "name": "System Programming",
+          "credits": 3,
+          "prereqs": [
+            "CS 225"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "CS 374",
+          "name": "Introduction to Algorithms & Models of Computation",
+          "credits": 4,
+          "prereqs": [
+            "CS 225",
+            "CS 173"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "CS 421",
+          "name": "Programming Languages & Compilers",
+          "credits": 3,
+          "prereqs": [
+            "CS 374"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "CS 426",
+          "name": "Senior Project",
+          "credits": 3,
+          "prereqs": [
+            "CS 374"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": false
+        },
+        {
+          "id": "MATH 221",
+          "name": "Calculus I",
+          "credits": 4,
+          "prereqs": [],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "MATH 231",
+          "name": "Calculus II",
+          "credits": 3,
+          "prereqs": [
+            "MATH 221"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "MATH 257",
+          "name": "Linear Algebra with Computational Applications",
+          "credits": 3,
+          "prereqs": [
+            "MATH 231"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "STAT 400",
+          "name": "Statistics and Probability I",
+          "credits": 4,
+          "prereqs": [
+            "MATH 231"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "CS 411",
+          "name": "Database Systems",
+          "credits": 3,
+          "prereqs": [
+            "CS 225"
+          ],
+          "type": "ELECTIVE",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "CS 440",
+          "name": "Artificial Intelligence",
+          "credits": 3,
+          "prereqs": [
+            "CS 225"
+          ],
+          "type": "ELECTIVE",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "CS 446",
+          "name": "Machine Learning",
+          "credits": 3,
+          "prereqs": [
+            "CS 225"
+          ],
+          "type": "ELECTIVE",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "CS 461",
+          "name": "Computer Security I",
+          "credits": 4,
+          "prereqs": [
+            "CS 241"
+          ],
+          "type": "ELECTIVE",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "RHET 105",
+          "name": "Writing and Research",
+          "credits": 4,
+          "prereqs": [],
+          "type": "GEN_ED",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "HUM 1xx",
+          "name": "Humanities Elective",
+          "credits": 3,
+          "prereqs": [],
+          "type": "GEN_ED",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "HUM 2xx",
+          "name": "Advanced Composition",
+          "credits": 3,
+          "prereqs": [],
+          "type": "GEN_ED",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "SOC 1--",
+          "name": "Social Science Elective",
+          "credits": 3,
+          "prereqs": [],
+          "type": "GEN_ED",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "NAT 1--",
+          "name": "Natural Science Elective",
+          "credits": 3,
+          "prereqs": [],
+          "type": "GEN_ED",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "CULT 1xx",
+          "name": "Cultural Studies Elective",
+          "credits": 3,
+          "prereqs": [],
+          "type": "GEN_ED",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "ELEC 001",
+          "name": "Free Elective 1",
+          "credits": 3,
+          "prereqs": [],
+          "type": "ELECTIVE",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "ELEC 002",
+          "name": "Free Elective 2",
+          "credits": 3,
+          "prereqs": [],
+          "type": "ELECTIVE",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "ELEC 003",
+          "name": "Free Elective 3",
+          "credits": 3,
+          "prereqs": [],
+          "type": "ELECTIVE",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "ELEC 004",
+          "name": "Free Elective 4",
+          "credits": 3,
+          "prereqs": [],
+          "type": "ELECTIVE",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "ELEC 005",
+          "name": "Free Elective 5",
+          "credits": 3,
+          "prereqs": [],
+          "type": "ELECTIVE",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "ELEC 006",
+          "name": "Free Elective 6",
+          "credits": 3,
+          "prereqs": [],
+          "type": "ELECTIVE",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "ELEC 007",
+          "name": "Free Elective 7",
+          "credits": 3,
+          "prereqs": [],
+          "type": "ELECTIVE",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "ELEC 008",
+          "name": "Free Elective 8",
+          "credits": 3,
+          "prereqs": [],
+          "type": "ELECTIVE",
+          "offeredFall": true,
+          "offeredSpring": true
+        }
+      ]
+    },
+    {
+      "name": "Physics",
+      "college": "College of Liberal Arts & Sciences",
+      "courses": [
+        {
+          "id": "PHYS 211",
+          "name": "University Physics: Mechanics",
+          "credits": 4,
+          "prereqs": [
+            "MATH 221"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "PHYS 212",
+          "name": "University Physics: Electricity & Magnetism",
+          "credits": 4,
+          "prereqs": [
+            "PHYS 211"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "PHYS 213",
+          "name": "University Physics: Thermal Physics",
+          "credits": 2,
+          "prereqs": [
+            "PHYS 211"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "PHYS 214",
+          "name": "University Physics: Quantum Physics",
+          "credits": 2,
+          "prereqs": [
+            "PHYS 211"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "PHYS 225",
+          "name": "Relativity & Math Applications",
+          "credits": 2,
+          "prereqs": [
+            "PHYS 211"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "PHYS 325",
+          "name": "Classical Mechanics I",
+          "credits": 3,
+          "prereqs": [
+            "PHYS 212",
+            "MATH 285"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "PHYS 326",
+          "name": "Classical Mechanics II",
+          "credits": 3,
+          "prereqs": [
+            "PHYS 325"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "PHYS 401",
+          "name": "Classical Physics Lab",
+          "credits": 3,
+          "prereqs": [
+            "PHYS 212"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "PHYS 435",
+          "name": "Electromagnetic Fields I",
+          "credits": 3,
+          "prereqs": [
+            "PHYS 212",
+            "MATH 285"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "PHYS 436",
+          "name": "Electromagnetic Fields II",
+          "credits": 3,
+          "prereqs": [
+            "PHYS 435"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "PHYS 486",
+          "name": "Quantum Physics I",
+          "credits": 4,
+          "prereqs": [
+            "PHYS 214",
+            "MATH 285"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "PHYS 487",
+          "name": "Quantum Physics II",
+          "credits": 4,
+          "prereqs": [
+            "PHYS 486"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "MATH 221",
+          "name": "Calculus I",
+          "credits": 4,
+          "prereqs": [],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "MATH 231",
+          "name": "Calculus II",
+          "credits": 3,
+          "prereqs": [
+            "MATH 221"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "MATH 241",
+          "name": "Calculus III",
+          "credits": 4,
+          "prereqs": [
+            "MATH 231"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "MATH 285",
+          "name": "Intro Differential Equations",
+          "credits": 3,
+          "prereqs": [
+            "MATH 241"
+          ],
+          "type": "MAJOR_REQUIREMENT",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "PHYS 404",
+          "name": "Electronic Circuits",
+          "credits": 4,
+          "prereqs": [
+            "PHYS 325"
+          ],
+          "type": "ELECTIVE",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "PHYS 427",
+          "name": "Thermal & Statistical Physics",
+          "credits": 4,
+          "prereqs": [
+            "PHYS 213"
+          ],
+          "type": "ELECTIVE",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "PHYS 460",
+          "name": "Condensed Matter Physics",
+          "credits": 4,
+          "prereqs": [
+            "PHYS 435"
+          ],
+          "type": "ELECTIVE",
+          "offeredFall": false,
+          "offeredSpring": true
+        },
+        {
+          "id": "RHET 105",
+          "name": "Writing and Research",
+          "credits": 4,
+          "prereqs": [],
+          "type": "GEN_ED",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "HUM 1xx",
+          "name": "Humanities Elective",
+          "credits": 3,
+          "prereqs": [],
+          "type": "GEN_ED",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "HUM 2xx",
+          "name": "Advanced Composition",
+          "credits": 3,
+          "prereqs": [],
+          "type": "GEN_ED",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "SOC 1xx",
+          "name": "Social Science Elective",
+          "credits": 3,
+          "prereqs": [],
+          "type": "GEN_ED",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "NAT 1xx",
+          "name": "Natural Science Elective",
+          "credits": 3,
+          "prereqs": [],
+          "type": "GEN_ED",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "CULT 1xx",
+          "name": "Cultural Studies Elective",
+          "credits": 3,
+          "prereqs": [],
+          "type": "GEN_ED",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "ELEC 001",
+          "name": "Free Elective 1",
+          "credits": 3,
+          "prereqs": [],
+          "type": "ELECTIVE",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "ELEC 002",
+          "name": "Free Elective 2",
+          "credits": 3,
+          "prereqs": [],
+          "type": "ELECTIVE",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "ELEC 003",
+          "name": "Free Elective 3",
+          "credits": 3,
+          "prereqs": [],
+          "type": "ELECTIVE",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "ELEC 004",
+          "name": "Free Elective 4",
+          "credits": 3,
+          "prereqs": [],
+          "type": "ELECTIVE",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "ELEC 005",
+          "name": "Free Elective 5",
+          "credits": 3,
+          "prereqs": [],
+          "type": "ELECTIVE",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "ELEC 006",
+          "name": "Free Elective 6",
+          "credits": 3,
+          "prereqs": [],
+          "type": "ELECTIVE",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "ELEC 007",
+          "name": "Free Elective 7",
+          "credits": 3,
+          "prereqs": [],
+          "type": "ELECTIVE",
+          "offeredFall": true,
+          "offeredSpring": true
+        },
+        {
+          "id": "ELEC 008",
+          "name": "Free Elective 8",
+          "credits": 3,
+          "prereqs": [],
+          "type": "ELECTIVE",
+          "offeredFall": true,
+          "offeredSpring": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preloaded-fonts xmlns:android="http://schemas.android.com/apk/res/android">
+    <font android:name="@font/fraunces" />
+    <font android:name="@font/inter" />
+    <font android:name="@font/sacramento" />
+</preloaded-fonts>
